@@ -98,7 +98,6 @@ register.click()
 print("Clicked on Register")
 
 write_credentials(email, password)
-print("Credentials written to file")
 seed.close()
 time.sleep(45)
 #handle_error_block(seed)
