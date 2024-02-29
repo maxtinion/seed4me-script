@@ -18,9 +18,9 @@ PASSWORD_LENGTH = 10
 
 
 def create_browser():
-    options = Options()
-    options.add_argument("--window-size=512,512")
-    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+    browserOptions = Options()
+    browserOptions.add_argument("--window-size=512,512")
+    browser = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=browserOptions)
     return browser
 
 
